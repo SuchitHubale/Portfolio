@@ -4,7 +4,7 @@ import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import { words } from "../constants";
-import HeroExperience from "../components/HeroModels/HeroExperience";
+import ProfileCard from "../components/ProfileCard";
 
 const Hero = () => {
   useGSAP(() => {
@@ -14,6 +14,13 @@ const Hero = () => {
       { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
     );
   });
+
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -51,8 +58,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Adrian, a developer based in Croatia with a passion for
-              code.
+            Hello, I'm Suchit - Student at Rajarambapu Institute of Technology, with a strong interest in software, innovation, and problem-solving.
             </p>
 
             <Button
@@ -63,10 +69,26 @@ const Hero = () => {
           </div>
         </header>
 
-        {/* RIGHT: 3D Model or Visual */}
-        <figure>
-          <div className="hero-3d-layout">
-            <HeroExperience />
+        {/* RIGHT: Profile Card */}
+        <figure className="flex items-center justify-center w-full h-full">
+          <div className="w-full h-full max-w-[400px] max-h-[600px]">
+            <ProfileCard
+              name="Suchit Hubale"
+              title="Software Developer"
+              handle="suchit"
+              status="Available for work"
+              contactText="Contact"
+              avatarUrl="/assets/profile.png"
+              iconUrl="/assets/iconpattern.png"
+              grainUrl="/assets/grain.webp"
+              behindGradient="radial-gradient(farthest-side circle at var(--pointer-x) var(--pointer-y), hsla(266, 100%, 90%, var(--card-opacity)) 4%, hsla(266, 50%, 80%, calc(var(--card-opacity) * 0.75)) 10%, hsla(266, 25%, 70%, calc(var(--card-opacity) * 0.5)) 50%, hsla(266, 0%, 60%, 0) 100%), radial-gradient(35% 52% at 55% 20%, #00ffaac4 0%, #073aff00 100%), radial-gradient(100% 100% at 50% 50%, #00c1ffff 1%, #073aff00 76%), conic-gradient(from 124deg at 50% 50%, #c137ffff 0%, #07c6ffff 40%, #07c6ffff 60%, #c137ffff 100%)"
+              innerGradient="linear-gradient(145deg, #60496e8c 0%, #71C4FF44 100%)"
+              showBehindGradient={true}
+              enableTilt={true}
+              showUserInfo={true}
+              miniAvatarUrl="/images/profile.png"
+              onContactClick={handleContactClick}
+            />
           </div>
         </figure>
       </div>
