@@ -11,10 +11,7 @@ const navLinks = [
       name: "Skills",
       link: "#skills",
     },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
-    },
+    
   ];
   
   const words = [
@@ -29,46 +26,35 @@ const navLinks = [
   ];
   
   const counterItems = [
+    { 
+      value: "suchithubale@gmail.com",
+      icon: "FaEnvelope",
+      label: "Copy Email",
+      action: "copy",
+      subtext: "Click to copy email address"
+    },
+    { 
+      value: "/resume.pdf",
+      icon: "FaFileAlt",
+      label: "View Resume",
+      action: "open",
+      subtext: "Opens in new tab"
+    },
     { value: 5, suffix: "+", label: "Completed Projects" },
     { value: 150, suffix: "+", label: "Solve LeetCode Problems" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
-    { value: 90, suffix: "%", label: "Client Retention Rate" },
+    
   ];
   
   const logoIconsList = [
     {
-      imgPath: "/images/logos/company-logo-1.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-2.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-3.png",
-    },
-    {
+      name: "company-logo-4",
       imgPath: "/images/logos/company-logo-4.png",
     },
     {
-      imgPath: "/images/logos/company-logo-5.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-6.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-7.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-8.png",
-    },
-    {
+      name: "company-logo-9",
       imgPath: "/images/logos/company-logo-9.png",
     },
-    {
-      imgPath: "/images/logos/company-logo-10.png",
-    },
-    {
-      imgPath: "/images/logos/company-logo-11.png",
-    },
+
   ];
   
   const abilities = [
@@ -159,7 +145,7 @@ const navLinks = [
       ],
     },
     {
-      review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      review: "Adrian's contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
       imgPath: "/images/exp2.png",
       logoPath: "/images/logo2.png",
       title: "Full Stack Developer",
@@ -171,7 +157,7 @@ const navLinks = [
       ],
     },
     {
-      review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+      review: "Adrian's work on Appwrite's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
       imgPath: "/images/exp3.png",
       logoPath: "/images/logo3.png",
       title: "React Native Developer",

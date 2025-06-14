@@ -470,3 +470,69 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
+/* Gradient Animations */
+@keyframes first {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes second {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes third {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fourth {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes fifth {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-first {
+  animation: first 20s linear infinite;
+}
+
+.animate-second {
+  animation: second 20s linear infinite;
+}
+
+.animate-third {
+  animation: third 20s linear infinite;
+}
+
+.animate-fourth {
+  animation: fourth 20s linear infinite;
+}
+
+.animate-fifth {
+  animation: fifth 20s linear infinite;
+}
