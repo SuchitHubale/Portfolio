@@ -1,6 +1,7 @@
 import React from 'react'
 import { navLinks } from '../constants'
 import { useState, useEffect } from 'react';
+import TrueFocus from './TrueFocus';
 
 const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -19,8 +20,15 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
         <div className='inner'>
-            <a className='logo' href="#hero">
-                Suchit's Portfolio
+            <a href="#hero" className="no-underline">
+                <TrueFocus 
+                text="Suchit's Portfolio"
+                blurAmount={2}
+                borderColor="#3b82f6"
+                glowColor="rgba(59, 130, 246, 0.6)"
+                animationDuration={1}
+                className="text-white-50 text-xl md:text-2xl font-semibold"
+                />
             </a>
 
             <nav className='desktop'>
@@ -47,3 +55,16 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+
+<a href="#hero" className="no-underline">
+            <TrueFocus 
+              text="Suchit's Portfolio"
+              blurAmount={2}
+              borderColor="#3b82f6"
+              glowColor="rgba(59, 130, 246, 0.6)"
+              animationDuration={1}
+              className="text-white-50 text-xl md:text-2xl font-semibold"
+            />
+          </a>

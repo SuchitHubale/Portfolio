@@ -43,7 +43,7 @@ const AnimatedCounter = () => {
   };
 
   return (
-    <div className='padding-x-lg xl:mt-0 mt-32'> 
+    <div id='#counter' className='padding-x-lg xl:mt-0 mt-32'> 
       <div className='mx-auto grid-4-cols gap-6 mb-1'>
         {/* First Counter Card */}
         <motion.div 
@@ -66,7 +66,6 @@ const AnimatedCounter = () => {
             size="80%"
             blendingValue="hard-light"
             interactive={true}
-            containerClassName="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           />
           <div className='text-white text-4xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
             <FaLaptopCode />
@@ -100,7 +99,6 @@ const AnimatedCounter = () => {
             size="80%"
             blendingValue="hard-light"
             interactive={true}
-            containerClassName="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           />
           <div className='text-white text-4xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
             <FaCode />
@@ -134,7 +132,6 @@ const AnimatedCounter = () => {
             size="80%"
             blendingValue="hard-light"
             interactive={true}
-            containerClassName="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           />
           <div className='text-white text-4xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
             <FaEnvelope />
@@ -201,7 +198,6 @@ const AnimatedCounter = () => {
             size="80%"
             blendingValue="hard-light"
             interactive={true}
-            containerClassName="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           />
           <div className='text-white text-4xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
             <FaFileAlt />

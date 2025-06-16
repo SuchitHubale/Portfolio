@@ -1,25 +1,26 @@
-const Button = ({ text, className, id }) => {
+import PropTypes from 'prop-types';
+
+const scrollToSection = (sectionId, offset = window.innerHeight * 0.15) => {
+  const target = document.getElementById(sectionId);
+  if (!target) return;
+
+  const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+  window.scrollTo({ top, behavior: 'smooth' });
+};
+
+const Button = ({ text, className, id, href = '#counter' }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (id) {
+      scrollToSection(id);
+    }
+  };
+
   return (
     <a
-      onClick={(e) => {
-        e.preventDefault(); // Stop the link from jumping instantly
-
-        const target = document.getElementById("counter"); // Find the section with ID "counter"
-
-        // Only scroll if we found the section and an ID is passed in
-        // taht prevents the contact button from scrolling to the top
-        if (target && id) {
-          const offset = window.innerHeight * 0.15; // Leave a bit of space at the top
-
-          // Calculate how far down the page we need to scroll
-          const top =
-            target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-          // Scroll smoothly to that position
-          window.scrollTo({ top, behavior: "smooth" });
-        }
-      }}
-      className={`${className ?? ""} cta-wrapper`} // Add base + extra class names
+      href={href}
+      onClick={handleClick}
+      className={`${className ?? ''} cta-wrapper`}
     >
       <div className="cta-button group">
         <div className="bg-circle" />
@@ -30,6 +31,13 @@ const Button = ({ text, className, id }) => {
       </div>
     </a>
   );
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  href: PropTypes.string,
 };
 
 export default Button;

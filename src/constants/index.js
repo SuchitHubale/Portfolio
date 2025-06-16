@@ -41,7 +41,7 @@ const navLinks = [
       subtext: "Opens in new tab"
     },
     { value: 5, suffix: "+", label: "Completed Projects" },
-    { value: 150, suffix: "+", label: "Solve LeetCode Problems" },
+    { value: 175, suffix: "+", label: "Solve LeetCode Problems" },
     
   ];
   
@@ -104,30 +104,35 @@ const navLinks = [
       modelPath: "/models/react_logo-transformed.glb",
       scale: 1,
       rotation: [0, 0, 0],
+      category: "frontend"
     },
     {
       name: "Machine Learning",
       modelPath: "/models/python-transformed.glb",
       scale: 0.8,
       rotation: [0, 0, 0],
+      category: "backend"
     },
     {
       name: "Backend Developer",
       modelPath: "/models/node-transformed.glb",
       scale: 5,
       rotation: [0, -Math.PI / 2, 0],
+      category: "backend"
     },
     {
       name: "Interactive Developer",
       modelPath: "/models/three.js-transformed.glb",
       scale: 0.05,
       rotation: [0, 0, 0],
+      category: "frontend"
     },
     {
       name: "Project Manager",
       modelPath: "/models/git-svg-transformed.glb",
       scale: 0.05,
       rotation: [0, -Math.PI / 4, 0],
+      category: "tools"
     },
   ];
   
