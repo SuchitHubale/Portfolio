@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { counterItems } from '../constants'
+import { counterItems } from '../constants/index.js'
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
 import { FaLaptopCode, FaCode, FaEnvelope, FaFileAlt } from 'react-icons/fa';
@@ -43,8 +43,8 @@ const AnimatedCounter = () => {
   };
 
   return (
-    <div id='#counter' className='padding-x-lg xl:mt-0 mt-32'> 
-      <div className='mx-auto grid-4-cols gap-6 mb-1'>
+    <div id='#counter' className='mt-32 padding-x-lg xl:mt-0'> 
+      <div className='gap-6 mx-auto mb-1 grid-4-cols'>
         {/* First Counter Card */}
         <motion.div 
           variants={cardVariants}
@@ -52,7 +52,7 @@ const AnimatedCounter = () => {
           whileHover="hover"
           onHoverStart={() => setHoveredCard('projects')}
           onHoverEnd={() => setHoveredCard(null)}
-          className='bg-zinc-900 rounded-lg p-3 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden group'
+          className='relative flex flex-col items-center justify-center p-3 overflow-hidden rounded-lg cursor-pointer bg-zinc-900 group'
         >
           <BackgroundGradientAnimation
             gradientBackgroundStart="rgb(108, 0, 162)"
@@ -73,7 +73,7 @@ const AnimatedCounter = () => {
           <div className='text-white text-3xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
             <CountUp suffix="+" end={5} duration={2.5} enableScrollSpy scrollSpyOnce/>
           </div>
-          <div className='text-white-50 text-base font-medium group-hover:text-white transition-colors duration-300 relative z-10'>
+          <div className='relative z-10 text-base font-medium transition-colors duration-300 text-white-50 group-hover:text-white'>
             Completed Projects
           </div>
         </motion.div>
@@ -85,7 +85,7 @@ const AnimatedCounter = () => {
           whileHover="hover"
           onHoverStart={() => setHoveredCard('leetcode')}
           onHoverEnd={() => setHoveredCard(null)}
-          className='bg-zinc-900 rounded-lg p-3 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden group'
+          className='relative flex flex-col items-center justify-center p-3 overflow-hidden rounded-lg cursor-pointer bg-zinc-900 group'
         >
           <BackgroundGradientAnimation
             gradientBackgroundStart="rgb(108, 0, 162)"
@@ -104,10 +104,10 @@ const AnimatedCounter = () => {
             <FaCode />
           </div>
           <div className='text-white text-3xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
-            <CountUp suffix="+" end={150} duration={2.5} enableScrollSpy scrollSpyOnce/>
+            <CountUp suffix="+" end={300} duration={2.5} enableScrollSpy scrollSpyOnce/>
           </div>
-          <div className='text-white-50 text-base font-medium group-hover:text-white transition-colors duration-300 relative z-10'>
-            Solve LeetCode Problems
+          <div className='relative z-10 text-base font-medium transition-colors duration-300 text-white-50 group-hover:text-white'>
+            Solve DSA Problems
           </div>
         </motion.div>
 
@@ -118,7 +118,7 @@ const AnimatedCounter = () => {
           whileHover="hover"
           onHoverStart={() => setHoveredCard('email')}
           onHoverEnd={() => setHoveredCard(null)}
-          className='bg-zinc-900 rounded-lg p-2 flex flex-col items-center justify-center relative overflow-hidden group'
+          className='relative flex flex-col items-center justify-center p-2 overflow-hidden rounded-lg bg-zinc-900 group'
         >
           <BackgroundGradientAnimation
             gradientBackgroundStart="rgb(108, 0, 162)"
@@ -136,7 +136,7 @@ const AnimatedCounter = () => {
           <div className='text-white text-4xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
             <FaEnvelope />
           </div>
-          <div className='text-white text-lg font-medium group-hover:text-blue-400 group-hover:font-bold transition-colors duration-300 relative z-10 text-center leading-relaxed'>
+          <div className='relative z-10 text-lg font-medium leading-relaxed text-center text-white transition-colors duration-300 group-hover:text-blue-400 group-hover:font-bold'>
             {copied ? (
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
@@ -152,9 +152,9 @@ const AnimatedCounter = () => {
             )}
           </div>
           
-          <div className="w-full flex justify-center">
+          <div className="flex justify-center w-full">
             {copied && confettiAnimation && (
-              <div className="absolute -bottom-5 right-0 z-50">
+              <div className="absolute right-0 z-50 -bottom-5">
                 <Lottie 
                   animationData={confettiAnimation}
                   loop={false}
@@ -184,7 +184,7 @@ const AnimatedCounter = () => {
           onClick={handleResumeClick}
           onHoverStart={() => setHoveredCard('resume')}
           onHoverEnd={() => setHoveredCard(null)}
-          className='bg-zinc-900 rounded-lg p-3 flex flex-col items-center justify-center cursor-pointer relative overflow-hidden group'
+          className='relative flex flex-col items-center justify-center p-3 overflow-hidden rounded-lg cursor-pointer bg-zinc-900 group'
         >
           <BackgroundGradientAnimation
             gradientBackgroundStart="rgb(108, 0, 162)"
@@ -202,7 +202,7 @@ const AnimatedCounter = () => {
           <div className='text-white text-4xl font-bold mb-0.5 group-hover:text-blue-400 transition-colors duration-300 relative z-10'>
             <FaFileAlt />
           </div>
-          <div className='text-white-50 text-base font-medium group-hover:text-white transition-colors duration-300 relative z-10'>
+          <div className='relative z-10 text-base font-medium transition-colors duration-300 text-white-50 group-hover:text-white'>
             View Resume
           </div>
           <motion.div 

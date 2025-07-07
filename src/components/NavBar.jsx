@@ -2,6 +2,7 @@ import React from 'react'
 import { navLinks } from '../constants'
 import { useState, useEffect } from 'react';
 import TrueFocus from './TrueFocus';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -17,54 +18,41 @@ const NavBar = () => {
             window.removeEventListener('scroll', handleScroll);
         }
     }, [])
-  return (
-    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
-        <div className='inner'>
-            <a href="#hero" className="no-underline">
-                <TrueFocus 
-                text="Suchit's Portfolio"
-                blurAmount={2}
-                borderColor="#3b82f6"
-                glowColor="rgba(59, 130, 246, 0.6)"
-                animationDuration={1}
-                className="text-white-50 text-xl md:text-2xl font-semibold"
-                />
-            </a>
 
-            <nav className='desktop'>
-                <ul>
-                    {navLinks.map(({ link, name}) =>(
-                        <li key={name} className='group'>
-                            <a href={link}>
-                                <span>{name}</span>
-                                <span className='underline'/>
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-            <a href="#contact" className='contact-btn group'>
-                <div className='inner'>
-                    <span className='text'>Contact me</span>
-                </div>
-            </a>
-        </div>
+    return (
+        <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
+            <div className='inner'>
+                <a href="#hero" className="no-underline">
+                    <TrueFocus 
+                        text="Suchit Nexus"
+                        blurAmount={2}
+                        borderColor="#3b82f6"
+                        glowColor="rgba(59, 130, 246, 0.6)"
+                        animationDuration={1}
+                        className="text-white-50 text-xl md:text-2xl font-semibold"
+                    />
+                </a>
 
-    </header>
-  );
+                <nav className='desktop'>
+                    <ul>
+                        {navLinks.map(({ link, name}) => (
+                            <li key={name} className='group'>
+                                <a href={link}>
+                                    <span>{name}</span>
+                                    <span className='underline'/>
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+                <a href="#contact" className='contact-btn group'>
+                    <div className='inner'>
+                        <span className='text'>Contact me</span>
+                    </div>
+                </a>
+            </div>
+        </header>
+    );
 };
 
 export default NavBar;
-
-
-
-<a href="#hero" className="no-underline">
-            <TrueFocus 
-              text="Suchit's Portfolio"
-              blurAmount={2}
-              borderColor="#3b82f6"
-              glowColor="rgba(59, 130, 246, 0.6)"
-              animationDuration={1}
-              className="text-white-50 text-xl md:text-2xl font-semibold"
-            />
-          </a>
