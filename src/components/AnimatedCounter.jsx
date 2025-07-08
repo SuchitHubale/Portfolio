@@ -51,7 +51,8 @@ const AnimatedCounter = () => {
           initial="initial"
           whileHover="hover"
           onHoverStart={() => setHoveredCard('projects')}
-          onHoverEnd={() => setHoveredCard(null)}
+          onHoverEnd={() => setHoveredCard("click to view my projects")}
+          onClick={() => window.open('https://github.com/SuchitHubale/', '_blank')}
           className='relative flex flex-col items-center justify-center p-3 overflow-hidden rounded-lg cursor-pointer bg-zinc-900 group'
         >
           <BackgroundGradientAnimation

@@ -134,7 +134,7 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper cursor-pointer">
+          <div ref={rydeRef} className="cursor-pointer first-project-wrapper">
             <div className="image-wrapper">
               <img src="/images/project1.png" alt="Ryde App Interface" />
             </div>
@@ -148,8 +148,8 @@ const AppShowcase = () => {
             </div>
           </div>
 
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project cursor-pointer" ref={libraryRef}>
+          <div className="overflow-hidden project-list-wrapper">
+            <div className="cursor-pointer project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src="/images/project2.png"
@@ -159,11 +159,11 @@ const AppShowcase = () => {
               <h2>AI FUSION : The Registration Platform</h2>
             </div>
 
-            <div className="project cursor-pointer" ref={ycDirectoryRef}>
+            <div className="cursor-pointer project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
                 <img src="/images/project3.png" alt="YC Directory App" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Nike Product Landing Page</h2>
             </div>
           </div>
         </div>
@@ -172,13 +172,13 @@ const AppShowcase = () => {
           <button
             ref={buttonRef}
             onClick={() => navigate('/projects')}
-            className="px-8 py-3 bg-white text-black rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2 text-lg font-medium group"
+            className="flex items-center gap-2 px-8 py-3 text-lg font-medium text-black transition-opacity bg-white rounded-lg hover:opacity-90 group"
           >
             Explore All Projects
             <svg 
               ref={arrowRef}
               xmlns="http://www.w3.org/2000/svg" 
-              className="h-5 w-5 transition-transform group-hover:translate-x-1" 
+              className="w-5 h-5 transition-transform group-hover:translate-x-1" 
               viewBox="0 0 20 20" 
               fill="currentColor"
             >
