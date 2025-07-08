@@ -245,7 +245,7 @@ export const projects = [
     role: "Full Stack Developer",
     category: "Web Application / EdTech",
     featured: true,
-    duration: "Mar 2024 - Apr 2024",
+    duration: "Mar 2025 - Apr 2025",
     liveDemo: "https://interviewprepration.vercel.app",
     sourceCode: "https://github.com/SuchitHubale/Interview-Prepration",
     keyFeatures: [
@@ -354,7 +354,7 @@ Analytics Dashboard
     role: "Full Stack ML Engineer",
     category: "Machine Learning / Distributed Systems",
     featured: true,
-    duration: "Dec 2023 - Feb 2024",
+    duration: "Dec 2024 - Feb 2025",
     liveDemo: "https://federated-learning-bank-fraud7.streamlit.app/",
     sourceCode:"https://github.com/SuchitHubale/Federated-Learning-Bank-Fraud",
     keyFeatures: [
@@ -465,7 +465,7 @@ Central Server (Flask) <=> Client 1 (PyTorch)
     role: "Full Stack Developer",
     category: "Event Management Platform",
     featured: true,
-    duration: "Oct 2024 - Present",
+    duration: "Sep 2024 - Oct 2024",
     liveDemo: "https://aifusion2k24.web.app",
     sourceCode: "https://github.com/SuchitHubale/AI-Fusion",
     keyFeatures: [
@@ -635,7 +635,7 @@ React Frontend <=> Firebase Services
     role: "Full Stack Developer & Machine Learning Engineer",
     category: "AI-Powered Search Engine",
     featured: true,
-    duration: "3 months",
+    duration: "12 months",
     liveDemo: "N/A (academic project, not publicly available)",
     sourceCode: "N/A (academic project, not publicly available)",
     keyFeatures: [
@@ -764,7 +764,7 @@ User Query <=> Flask App <=> BERT Model
     role: "Full Stack Developer",
     category: "Web Application / Developer Tools",
     featured: true,
-    duration: "Mar 2024 - Apr 2024",
+    duration: "Mar 2025 - Apr 2025",
     liveDemo: "https://code-snippets-b9p7.vercel.app/",
     sourceCode: "https://github.com/SuchitHubale/Code-Snippets",
     keyFeatures: [
