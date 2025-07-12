@@ -197,7 +197,7 @@ export const expLogos = [
 export const socialImgs = [
   {
     imgPath: "/images/insta.png",
-    url: "https://www.instagram.com/suchit_hubale_/"
+    url: "https://www.instagram.com/suchit_hubale_/",
   },
   {
     name: "x",
@@ -356,7 +356,7 @@ Analytics Dashboard
     featured: true,
     duration: "Dec 2024 - Feb 2025",
     liveDemo: "https://federated-learning-bank-fraud7.streamlit.app/",
-    sourceCode:"https://github.com/SuchitHubale/Federated-Learning-Bank-Fraud",
+    sourceCode: "https://github.com/SuchitHubale/Federated-Learning-Bank-Fraud",
     keyFeatures: [
       "Federated learning with multiple clients",
       "Real-time model aggregation using FedAvg algorithm",
@@ -703,11 +703,7 @@ User Query <=> Flask App <=> BERT Model
         icon: "web",
       },
     ],
-    teamMembers: [
-      "Sanket gavali",
-      "Srushti Ghotane",
-      "Shruti Khurandale",
-    ],
+    teamMembers: ["Sanket gavali", "Srushti Ghotane", "Shruti Khurandale"],
     dataScale: "100,000+ patent documents",
     searchCapabilities: [
       "Semantic similarity search using BERT embeddings",

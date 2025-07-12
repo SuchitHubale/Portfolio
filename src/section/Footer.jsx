@@ -1,4 +1,5 @@
 import { socialImgs } from "../constants";
+import VisitorCounter from "../components/VisitorCounter";
 
 const Footer = () => {
   return (
@@ -16,7 +17,8 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <VisitorCounter />
           <p className="text-center md:text-end">
             © {new Date().getFullYear()} Suchit Hubale. All rights reserved.
           </p>
