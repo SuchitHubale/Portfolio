@@ -661,30 +661,6 @@ body {
 
 ## <a name="more">🚀 More</a>
 
-### **Website Analytics & Visitor Tracking**
-
-This portfolio includes multiple analytics solutions to track visitor statistics:
-
-#### **Google Analytics**
-- Comprehensive visitor tracking and insights
-- Replace `GA_MEASUREMENT_ID` in `index.html` with your actual Google Analytics ID
-- Get your ID from [Google Analytics](https://analytics.google.com/)
-
-#### **Vercel Analytics**
-- Automatic analytics when deployed on Vercel
-- No configuration needed
-- View analytics in your Vercel dashboard
-
-#### **Simple Analytics**
-- Privacy-focused alternative to Google Analytics
-- GDPR compliant
-- No cookies or personal data collection
-
-#### **Custom Visitor Counter**
-- Local visitor tracking component
-- Displays in the footer
-- Stores data in localStorage
-
 ### **Performance Optimizations**
 - Optimized 3D models with reduced polygon count
 - Lazy loading for images and components
